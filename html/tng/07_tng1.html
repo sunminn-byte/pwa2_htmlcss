@@ -12,8 +12,9 @@
       <legend>사용자 정보</legend>
       <ul>
         <li>
-          <label for="id">아이디</label>
-          <input type="text" name="id" id="id" placeholder="4자 ~ 10자 사이, 공백없이">
+          <!-- id는 이미 사용하고 있는 이름(예약어)일 가능성이 높아서 account로 사용 -->
+          <label for="account">아이디</label>
+          <input type="text" name="account" id="account" placeholder="4자 ~ 10자 사이, 공백없이">
         </li>
         <li>
           <label for="email">이메일</label>
@@ -21,17 +22,23 @@
         </li>
         <li>
           <label for="password">비밀번호</label>
-          <input type="password" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
+          <!-- 가로로 길어지면 아래로 개행해서 보기 쉽게 정리할 수 있음 -->
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="문자와 숫자, 특수 기호 포함"
+          >
         </li>
         <li>
-          <label for="password2">비밀번호 확인</label>
-          <input type="password" name="password2" id="password2">
+          <label for="passwordChk">비밀번호 확인</label>
+          <input type="password" name="passwordChk" id="passwordChk">
         </li>
         <li>
           <label for="adress">가입 경로</label>
           <select name="adress" id="adress">
-            <option value="0">검색</option>
-            <option value="1" selected>기타</option>
+            <option value="suggest">추천</option>
+            <option value="etc" selected>기타</option>
           </select>
         </li>
         <li>
@@ -42,13 +49,23 @@
     </fieldset>
     <fieldset>
       <legend>이벤트와 새로운 소식</legend>
+
+      <!-- T -->
+      <input type="radio" name="agreeFlg" id="agreeFlgTrue" value="1">
+      <label for="agreeflgTrue">메일 수신</label>
+      <input type="radio" name="agreeFlg" id="agreeFlgFalse" value="0" checked>
+      <label for="agreeFlgFalse">메일 수신 안 함</label>
+      <!-- me -->
       <input type="radio" name="check" id="yes">
-      <label for="">메일 수신</label>
+      <label for="yes">메일 수신</label>
       <input type="radio" name="check" id="no" checked>
-      <label for="">메일 수신 안 함</label>
+      <label for="no">메일 수신 안 함</label>
+
     </fieldset>
     <button type="submit">가입하기</button>
     <button type="reset">취소</button>
   </form>  
+  <!-- 스네이크 기법 : 단어와 단어 사이에 '_'로 연결, user_email -->
+   <!-- 카멜 기법 : 연결되는 단어의 첫글자를 대문자로 작성, userEmail -->
 </body>
 </html>

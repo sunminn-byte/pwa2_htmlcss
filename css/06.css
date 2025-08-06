@@ -1,0 +1,65 @@
+/* 
+블럭 레벨 요소
+1. 혼자 한줄 다 차지 한다.
+2. 크기 조절은 가능하다.
+3. 크기를 조절해서 위로 올라갈 공간이 충분한것처럼 보이나, 올라가지 않는다.
+
+인라인 레벨 요소
+1. 콘텐츠 크기만큼만 크기가 고정된다.
+2. 크기 조절이 안된다.
+3. 공간이 충분하면 위로 올라온다.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* padding: 10px; */
+}
+
+.div, .div-margin {
+  border: 1px solid #000;
+}
+
+.div-box, h1 {
+  padding: 20px;
+  width: 100px;
+}
+
+span {
+  display: inline-block;
+  width: 100vw;
+  height: 50vh;
+  padding: 5px;
+}
+
+/* 
+  vw, vh (뷰포트기준 단위) : 뷰의 크기에 따라 비율로 설정 단위
+  % : 부모요소의 크기에 따라 비율로 설정 단위
+*/
+.div-parent {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.div-child {
+  border: 1px solid #e84d4d;
+  width: 50vw;
+  min-width: 400px;
+}
+
+.div-margin {
+  margin: 20px;
+  background-color: #e84d4d;
+  /* 
+    수평거리, 수직거리, 흐림정도, 번짐정도, 색상, 그림자 방향
+  */
+  box-shadow: 1px 1px 1px 1px #000 inset;
+}
+
+/* margin 중첩 : 세로로 배치되어 있을 떄 좀 더 큰 margin으로 합쳐짐(40,10이면 그 사이는 40px로 된다.) 
+xx가로는 아님xx*/

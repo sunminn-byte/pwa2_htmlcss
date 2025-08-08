@@ -1,0 +1,31 @@
+.main {
+  border: 1px solid #000;
+  width: 450px;
+  height: 450px;
+}
+
+/* main에 relative를 적용하고, position1,2,3에 absolute를 적용해서 배치하는 방법도 있음 */
+
+.position1, .position2, .position3 {
+  border: 1px solid #000;
+  width: 150px;
+  height: 150px;
+}
+
+.position1 {
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+
+.position2 {
+  position: relative;
+  left: 210px;
+  bottom: 70px;
+}
+
+.position3 {
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+}

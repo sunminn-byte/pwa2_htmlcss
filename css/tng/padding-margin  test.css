@@ -1,0 +1,13 @@
+/* padding은 네모와 글씨가 너무 붙어있을 때 사용 */
+
+.padding-test {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+/* 그외에는 margin 사용해서 조절 */
+
+.margin-test {
+  border: 1px solid #000;
+  margin: 10px;
+}

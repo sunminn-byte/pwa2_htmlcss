@@ -19,13 +19,14 @@ body {
   /* padding: 10px; */
 }
 
-.div, .div-margin {
+.div {
   border: 1px solid #000;
 }
 
 .div-box, h1 {
   padding: 20px;
   width: 100px;
+  border: 1px solid #e84d4d;
 }
 
 span {

@@ -1,0 +1,32 @@
+@keyframes moveUpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+
+  /* translate() : 요소를 이동 */
+  /* transform: translate(200px, 300px); */
+
+  /* scal() : 요소를 확대 */
+  /* transform: scale(2, 2); */
+
+  /* rotate() : 요소를 회전 */
+  /* transform: rotate(45deg); */
+
+  /* skew() : 요소를 비틀기 */
+  /* transform: skew(45deg, -60deg); */
+
+  /* 애니메이션 효과 */
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+}

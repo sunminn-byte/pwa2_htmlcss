@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  height: 387px;
+  background-image: url('../../img/linux.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 40px;
+}
+
+.title {
+  color: rgb(226, 48, 220);
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.name, .age {
+  /* background-color: rgba(255, 255, 255, 0.3);   */
+  background: none;
+}
+
+.required-sign::before {
+  content: '*';
+  color: red;
+}
+
+.gender-title::before {
+  content: '*';
+  color: red;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 220px;
+  height: 150px;
+  /* opacity: 0.5; */
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background: none;
+}
+
+input:focus {
+  border: 3px solid red;
+  outline: none;
+}
+
+input:checked + label {
+  color: red;
+}
+
+.request {
+  vertical-align: top;
+  line-height: 37px;
+}
+
+textarea:focus {
+  border: 3px solid red;
+  outline: none;
+}
+
+.submit-content {
+  display: none;
+  font-size: 18px;
+}
+
+button:hover + .submit-content {
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
